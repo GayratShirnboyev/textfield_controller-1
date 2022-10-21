@@ -12,6 +12,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  String txt = 'Hello';
+  TextEditingController controller = TextEditingController(text: '0');
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +22,7 @@ class _MyAppState extends State<MyApp> {
         body: Container(
           child: TextField(
             decoration: InputDecoration(labelText: 'Input'),
-            controller: TextEditingController(text: '0'),
+            controller: controller,
           ),
         ),
       ),
