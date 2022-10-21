@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
           ),
           TextButton(
             onPressed: () {
-              print('Hi');
+              print(controller.text);
             },
             child: Text('Button'),
           )
