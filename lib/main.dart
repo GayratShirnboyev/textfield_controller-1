@@ -17,7 +17,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Container(),
+        body: Container(
+          child: TextField(
+            decoration: InputDecoration(labelText: 'Input'),
+            controller: TextEditingController(text: '0'),
+          ),
+        ),
       ),
     );
   }
