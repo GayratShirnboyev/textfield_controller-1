@@ -23,6 +23,12 @@ class _MyAppState extends State<MyApp> {
             decoration: InputDecoration(labelText: 'Input'),
             controller: controller,
           ),
+          TextButton(
+            onPressed: () {
+              print('Hi');
+            },
+            child: Text('Button'),
+          )
         ]),
       ),
     );
