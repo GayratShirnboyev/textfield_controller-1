@@ -20,14 +20,15 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         body: Column(children: [
           TextField(
-            decoration: InputDecoration(labelText: 'Input'),
-            controller: controller,
-          ),
-          TextButton(
-            onPressed: () {
-              print(controller.text);
-            },
-            child: Text('Button'),
+              decoration: InputDecoration(labelText: 'Input'),
+              controller: controller,
+              keyboardType: TextInputType.phone),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text('+'),
+            ),
           )
         ]),
       ),
